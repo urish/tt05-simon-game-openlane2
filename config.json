@@ -4,7 +4,7 @@
 
   "FP_SIZING": "absolute",
   "DIE_AREA": "0 0 157.32 111.52",
-  "FP_DEF_TEMPLATE": "dir::def/tt_block_1x1_pg.def",
+  "FP_DEF_TEMPLATE": "dir::tt-custom-gds/tt_block_1x1_pg.def",
 
   "FP_IO_HLENGTH": 2,
   "FP_IO_VLENGTH": 2,
@@ -19,6 +19,10 @@
   "//": "don't use power rings or met5",
   "DESIGN_IS_CORE": false,
   "RT_MAX_LAYER": "met4",
+
+  "//": "make the PDN denser",
+  "FP_PDN_VOFFSET": 20.355,
+  "FP_PDN_VPITCH": 40.710,
 
   "//": "save some time",
   "RUN_KLAYOUT_XOR": false,
